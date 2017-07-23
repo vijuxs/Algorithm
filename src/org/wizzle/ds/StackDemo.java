@@ -70,6 +70,12 @@ public class StackDemo {
 	}
 }
 
+/**
+ * Generic Stack.
+ * @author viju
+ *
+ * @param <E>
+ */
 class GStack<E> {
 	private Vector<E> elements;
 	private int top;
@@ -111,6 +117,11 @@ class GStack<E> {
 	}
 }
 
+/**
+ * A normal stack that limits the data type to int.
+ * @author viju
+ *
+ */
 class Stack {
 	
 	private Vector<Integer> elements;
