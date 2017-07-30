@@ -28,6 +28,7 @@ public class BubbleDemo {
 	
 	public static void main(String... args) {
 		int[] array = {3, 10, 2, 6, 4};
+		//int[] array = {1,2,4,5,6,7};
 		
 		BubbleSort.sort(array);
 		
@@ -49,7 +50,9 @@ class BubbleSort {
 	public static void sort(int[] array) {
 		
 		for(int i = array.length; i > 0; i--) {
-
+			
+			System.out.println("Pass " + i);
+			
 			for (int j = 0; j < array.length - 1; j++) {
 
 				if (array[j] > array[j + 1]) {
@@ -59,7 +62,7 @@ class BubbleSort {
 		}
 	}
 	
-	public static void swap(int[] array, int one, int two) {
+	private static void swap(int[] array, int one, int two) {
 		
 		int tempValue = array[one];
 		array[one] = array[two];
