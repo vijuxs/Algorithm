@@ -29,7 +29,7 @@ public class BubbleDemo {
 	public static void main(String... args) {
 		int[] array = {3, 10, 2, 6, 4};
 		
-		new BubbleSort().sort(array);
+		BubbleSort.sort(array);
 		
 		for(int i = 0; i < array.length; i++){
 			System.out.print (array[i] + " ");
